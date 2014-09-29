@@ -28,14 +28,5 @@ namespace MobileChat.Data
         {
             return base.Set<T>();
         }
-
-        //protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        //{
-        //    base.OnModelCreating(modelBuilder);
-
-        //    modelBuilder.Entity<ApplicationUser>()
-        //                .HasMany(u => u.Friends)
-        //                .WithOptional();
-        //}
     }
 }

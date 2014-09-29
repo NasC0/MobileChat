@@ -14,19 +14,3 @@ D:\Copy\Projects\Telerik_HW_2013-2014\Hybrid Mobile Applications\MobileChat\Mobi
 D:\Copy\Projects\Telerik_HW_2013-2014\Hybrid Mobile Applications\MobileChat\MobileChat.Data\obj\Debug\MobileChat.Data.csprojResolveAssemblyReference.cache
 D:\Copy\Projects\Telerik_HW_2013-2014\Hybrid Mobile Applications\MobileChat\MobileChat.Data\obj\Debug\MobileChat.Data.dll
 D:\Copy\Projects\Telerik_HW_2013-2014\Hybrid Mobile Applications\MobileChat\MobileChat.Data\obj\Debug\MobileChat.Data.pdb
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\bin\Debug\MobileChat.Data.dll.config
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\bin\Debug\MobileChat.Data.dll
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\bin\Debug\MobileChat.Data.pdb
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\bin\Debug\EntityFramework.dll
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\bin\Debug\EntityFramework.SqlServer.dll
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\bin\Debug\MobileChat.Models.dll
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\bin\Debug\MobileChat.Models.pdb
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\bin\Debug\EntityFramework.xml
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\bin\Debug\EntityFramework.SqlServer.xml
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\obj\Debug\MobileChat.Data.csprojResolveAssemblyReference.cache
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\obj\Debug\MobileChat.Data.dll
-D:\Copy\Projects\MobileChat\MobileChat\MobileChat.Data\obj\Debug\MobileChat.Data.pdb

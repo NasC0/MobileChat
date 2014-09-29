@@ -1,0 +1,8 @@
+<div data-role="view" data-title="Find Friends" data-layout="main" data-model="app.viewmodels.findFriends">
+	<h1 data-bind="text: title"></h1>
+	<form id="find-frieds-form">
+		<input type="text" id="friendName" placeholder="Friend name" required
+		validationMessage="Friend name is required!" data-bind="value: username" />
+		<a href="view/friends-result.html?name=#= username #" data-role="button"></a>
+	</form>
+</div>

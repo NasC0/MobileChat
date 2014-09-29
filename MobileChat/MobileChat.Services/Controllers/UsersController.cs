@@ -6,7 +6,6 @@ using System.Web.Http;
 using Exam.WebApi.Infrastructure;
 using MobileChat.Data;
 using MobileChat.Models;
-using MobileChat.Services.DataModels;
 
 namespace MobileChat.Services.Controllers
 {
@@ -38,9 +37,7 @@ namespace MobileChat.Services.Controllers
             }
 
             var users = this.data.Users.All()
-                            .Where(u => u.UserName.ToLower().Contains(name.ToLower()))
-                            .AsQueryable()
-                            .Select(UserModel.FromModel);
+                            .Where(u => u.UserName.ToLower().Contains(name.ToLower()));
 
             return Ok(users);
         }

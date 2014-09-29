@@ -1,14 +1,24 @@
 <div data-role="view" data-title="Register" data-layout="login" data-model="app.viewmodels.register">
 	<h1 data-bind="text: title"></h1>
-	<label for="Email">Email</label>
-	<input type="email" id="Email" />
-
-	<label for="Username">Username</label>
-	<input type="text" id="Username" />
-
-	<label for="Password">Password</label>
-	<input type="password" id="Password" />
-
-	<label for="confirm-password">Confirm password</label>
-	<input type="password" id="confirm-password" />
+	<form id="login-form">
+		<ul data-role="listview" data-style="inset">
+			<li>
+				<input type="email" id="registerEmail" placeholder="Email" required
+				validationMessage="Email is required!" data-bind="value: email">
+			</li>
+			<li>
+				<input type="text" id="loginUsername" placeholder="Username" required
+				validationMessage="Username is required!" data-bind="value: username"/>
+			</li>
+			<li>
+				<input type="password" id="loginPassword" placeholder="Password" required
+				validationMessage="Password is required!" data-bind="value: password"/>
+			</li>
+			<li>
+				<input type="password" id="confirmPassword" placeholder="Confirm Password" required
+				validationMessage="Confirmation password is required!" data-bind="value: confirmPassword">
+			</li>
+		</ul>
+		<button data-role="button" data-bind="events: {click: register}">Register</button>
+	</form>
 </div>

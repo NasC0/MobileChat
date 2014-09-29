@@ -1,18 +1,33 @@
 /* global kendo */
 
-(function () {
-    document.addEventListener('deviceready', function () {
-      navigator.splashscreen.hide();
+var app = (function() {
+  document.addEventListener('deviceready', function() {
+    navigator.splashscreen.hide();
 
-      var app = new kendo.mobile.Application(document.body, {
-        transition: 'slide',
-        initial: 'views/login.html'
-      });
+    document.addEventListener('offline', function() {
+      var currentConnection = navigator.connection.type;
+
+      if (currentConnection === 'none' || currentConnection === 'unknown') {
+        navigator.notification.alert('You are not connected to the internet!');
+      } else {
+        navigator.notification.alert('Please check your internet connection!');
+      }
 
     }, false);
-    window.baseApiUrl = 'http://localhost:62112/';
-    $.get(baseApiUrl + 'api/users?name=nas', function(response){
-      console.log(response);
+
+    document.addEventListener('online', function() {
+      navigator.notification.vibrate();
+      navigator.notification.alert('Connected to the internet.');
     });
-    
+
+  }, false);
+
+  var mobileApp = new kendo.mobile.Application(document.body, {
+    transition: 'slide',
+    initial: 'views/login.html'
+  });
+
+  window.baseApiUrl = 'http://localhost:62112/';
+
+  return mobileApp;
 }());
