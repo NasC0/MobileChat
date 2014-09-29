@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <style>
+        .km-login:after,
+        .km-login:before
+        {
+            content: "\e0b2";
+        }
+
+        .km-register:after,
+        .km-register:before
+        {
+            content: "\e319";
+        }
+    </style>
+</head>
+<body>
+ 
+    <div data-role="layout" data-id="login">
+        <div data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </div>
+
+        <div data-role="footer">
+            <div data-role="tabstrip">
+                <a href="views/login.html" data-icon="login"></a>
+                <a href="views/register.html" data-icon="register"></a>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/view-models/login.js"></script>
+    <script src="scripts/view-models/register.js"></script>
+</body>
+</html>
