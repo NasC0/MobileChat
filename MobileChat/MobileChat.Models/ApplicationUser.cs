@@ -10,13 +10,11 @@ namespace MobileChat.Models
     public class ApplicationUser : IdentityUser
     {
         private ICollection<Chat> chats;
-        private ICollection<ApplicationUser> friends;
         private ICollection<FriendRequest> friendRequests;
 
         public ApplicationUser()
         {
             this.chats = new HashSet<Chat>();
-            this.friends = new HashSet<ApplicationUser>();
             this.friendRequests = new HashSet<FriendRequest>();
         }
 
@@ -41,18 +39,7 @@ namespace MobileChat.Models
             }
         }
 
-        public virtual ICollection<ApplicationUser> Friends
-        {
-            get
-            {
-                return this.friends;
-            }
-
-            set
-            {
-                this.friends = value;
-            }
-        }
+        public virtual ICollection<ApplicationUser> Friends { get; set; }
 
         public virtual ICollection<FriendRequest> FriendRequests
         {
